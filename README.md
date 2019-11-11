@@ -8,7 +8,7 @@
 - source/bin activate
 - mkdir src && cd src
 
-- git clone https://github.com/learnwithcode/Building-a-blog-Application.git . <=noticeinclude period
+- git clone https://github.com/learnwithcode/Bol-Retailer-Sync-Shipment.git . <=noticeinclude period
 
 - pip install -r requirements.txt
 - python manage.py migrate
@@ -34,7 +34,7 @@
 
 
 
-#### Runnig Everythin Smoothly
+#### Runnig Everything Smoothly
 
 #### Open Two new Terminal Tab  and activate scripts in your root directory
 #### and run these command in each tab

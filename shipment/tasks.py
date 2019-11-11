@@ -48,8 +48,16 @@ def login():
 #Get shipment list within 7 request in 60 secs
 @periodic_task(run_every=timedelta(seconds=8.57))
 def sync_shipment():
-    token = AuthToken.objects.last()
-    token = token.token  
+    '''
+    if not login func was first call by celery 
+    we don't have to wait for 299 sec
+    '''
+    try:
+        token = AuthToken.objects.last()
+        token = token.token
+    except Exception as e:
+        print('login func was not hit first')
+        token = login()      
 
     r = request_conf(token)
     """

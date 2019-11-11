@@ -5,7 +5,7 @@
 - cd Desktop
 - virtualenv bol
 - cd bol
-- source/bin activate
+- source bin/activate
 - mkdir src && cd src
 
 - git clone https://github.com/learnwithcode/Bol-Retailer-Sync-Shipment.git . <=noticeinclude period
